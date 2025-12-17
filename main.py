@@ -1,6 +1,6 @@
 ﻿from ProjectBuilder import Builder, Project
 
-project = Project('Wrong habbits', 'smoking')
+project = Project('English project', 'Outfit styles')
 builder = Builder()
 
 @project.Page
@@ -8,10 +8,9 @@ def Main(this):
     project.AddPng(this, 'png1.png')
     project.AddPng(this, 'png2.png')
     project.AddPng(this, 'png3.png')
-    project.AddChapter(this, 'Introduction', 'Smoking is one of the most common harmful habits, with negative consequences. It leads to various diseases and worsens health.')
-    project.AddChapter(this, 'Health causes', 'Smoking causes lung diseases such as bronchitis and lung cancer. It increases the risk of heart disease and stroke. Cigarettes contain substances that cause addiction, making it difficult to quit. Smoking worsens the condition of the skin, making it old and pale. Inflammation in the respiratory pathways caused by smoking can lead to respiratory illnesses. It can also result in death.')
-    project.AddChapter(this, 'Consist', 'The main component of cigarettes is tobacco. Tar is added to them for flavor. They contain nicotine, which causes addiction. The composition includes carbon monoxide. Flavorings are often present.Preservatives, such as humectants, are added. The smoke contains formaldehyde. Metals such as cadmium and lead are included. The paper that the tobacco is wrapped in also burns. The filter is made of acetate fiber.')
-    project.AddChapter(this, 'End', 'In conclusion, smoking is a dangerous habit that negatively impacts health and quality of life. Quitting smoking helps to prevent many serious diseases.')
+    project.AddChapter(this, 'Introduction', 'Clothing is an important part of our daily lives. It can help feel comfortable. Different situations require different types of outfits. Here are some examples of everyday, school, and formal clothing.')
+    project.AddChapter(this, 'Clothes', 'A casual outfit is perfect for relaxing or hanging out with friends. Usually, it includes jeans, t-shirts, and sneakers. These clothes are comfortable and easy to wear. A school outfit often consists of a uniform. Many schools require students to wear shirts, pants and sometimes ties. It helps to create a discipline. The clothes are simple for learning.A formal outfit usually for special events like ceremonies. It includes dresses, suits, or tuxedos. These clothes often have elegant details and high-quality fabrics. They make the wearer look stylish.')
+    project.AddChapter(this, 'Concluse', 'Wearing the right outfit can boost confidence and make a good impression. Everyone should feel comfortable and stylish in their clothes.')
     
 @builder.Generation
 def index():
@@ -20,8 +19,8 @@ def index():
     builder.AddFont('Schoolbook', 'Schoolbook.ttf')
     builder.AddFont('Amrus', 'amrys.oft')
 
-    builder.SetCss('#label', 'backgroundColor', 'smokewhite')
-    builder.SetCss('#sublabel', 'backgroundColor', 'black')
+    builder.SetCss('#label', 'backgroundColor', 'whitesmoke')
+    builder.SetCss('#sublabel', 'backgroundColor', 'yellow')
 
     builder.SetCss('#sublabel', 'color', 'white')
 
